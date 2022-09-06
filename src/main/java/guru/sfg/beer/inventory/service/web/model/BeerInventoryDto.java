@@ -12,10 +12,12 @@ import java.util.UUID;
  * Created by jt on 2019-05-31.
  */
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class BeerInventoryDto {
+public class BeerInventoryDto
+{
+    public BeerInventoryDto() {}
+
     private UUID id;
     private OffsetDateTime createdDate;
     private OffsetDateTime lastModifiedDate;
