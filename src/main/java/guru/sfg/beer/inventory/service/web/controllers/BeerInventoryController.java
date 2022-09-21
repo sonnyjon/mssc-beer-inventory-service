@@ -19,18 +19,19 @@ import java.util.stream.Collectors;
 @Slf4j
 @RequiredArgsConstructor
 @RestController
-public class BeerInventoryController {
-
+public class BeerInventoryController
+{
     private final BeerInventoryRepository beerInventoryRepository;
     private final BeerInventoryMapper beerInventoryMapper;
 
     @GetMapping("api/v1/beer/{beerId}/inventory")
-    List<BeerInventoryDto> listBeersById(@PathVariable UUID beerId){
+    List<BeerInventoryDto> listBeersById(@PathVariable UUID beerId)
+    {
         log.debug("Finding Inventory for beerId:" + beerId);
 
-        return beerInventoryRepository.findAllByBeerId(beerId)
-                .stream()
-                .map(beerInventoryMapper::beerInventoryToBeerInventoryDto)
-                .collect(Collectors.toList());
+        return beerInventoryRepository.findAllByBeerId( beerId )
+                                                .stream()
+                                                .map( beerInventoryMapper::toBeerInventoryDto )
+                                                .collect(Collectors.toList());
     }
 }

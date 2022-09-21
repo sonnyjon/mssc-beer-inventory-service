@@ -33,6 +33,10 @@ import java.util.UUID;
 @Entity
 public class BeerInventory extends BaseEntity
 {
+    private UUID beerId;
+    private String upc;
+    private Integer quantityOnHand = 0;
+
     public BeerInventory() {}
 
     @Builder
@@ -44,8 +48,4 @@ public class BeerInventory extends BaseEntity
         this.upc = upc;
         this.quantityOnHand = quantityOnHand;
     }
-
-    private UUID beerId;
-    private String upc;
-    private Integer quantityOnHand = 0;
 }
