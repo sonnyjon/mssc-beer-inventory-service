@@ -13,11 +13,10 @@ import java.util.UUID;
  */
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
 public class BeerInventoryDto
 {
-    public BeerInventoryDto() {}
-
     private UUID id;
     private OffsetDateTime createdDate;
     private OffsetDateTime lastModifiedDate;
