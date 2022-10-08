@@ -30,13 +30,16 @@
             <name>John Thompson</name>
             <organization>Spring Framework Guru</organization>
         </developer>
+        <developer>
+            <name>Sonny Jon</name>
+            <organization>sonnyjon.dev</organization>
+        </developer>
     </developers>
 
     <properties>
         <java.version>17</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-<!--        <org.mapstruct.version>1.3.0.Final</org.mapstruct.version>-->
         <org.mapstruct.version>1.5.2.Final</org.mapstruct.version>
         <jaxb.version>2.3.0</jaxb.version>
     </properties>
