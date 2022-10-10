@@ -9,6 +9,7 @@
         <version>1.0.23</version>
     </parent>
 
+    <groupId>dev.sonnyjon</groupId>
     <artifactId>mssc-beer-inventory-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
